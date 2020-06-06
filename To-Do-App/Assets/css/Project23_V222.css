@@ -1,0 +1,179 @@
+body{
+    background: #F1F2B5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #135058, #F1F2B5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #135058, #F1F2B5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+h1{/*--TO DO LIST--*/
+    background-color: #2980b9;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: normal;
+    font-family: 'Courier New', Courier, monospace; 
+    margin: 0;
+    padding: 10px, 20px;
+    font-size: 40px;
+    color: whitesmoke;
+    text-shadow: 1px 2px 2px orange;
+    /* color: chartreuse; */
+    text-shadow: 1px 2px 2px lightslategrey ;
+    /* font-family: 'Kanit', sans-serif; */
+    /* font-family: 'Nunito Sans', sans-serif; */
+    font-family: 'Lobster', cursive;
+    letter-spacing: 5px;
+    /* border-bottom: 1px groove black;     */
+}
+
+
+ol{
+    list-style: none;
+    margin: 0;
+    line-height: 28px;
+    padding: 0;
+    font-size: 20px;
+    font-family: 'Signika', 'Roboto Condensed', sans-serif;
+}
+
+
+li{
+    background-color: lightgreen;/*nice subtle--tbkept */
+    /* background-color: greenyellow;vvnice */
+    /* background-color: palegreen; */
+    /* background-color: yellow; */
+    height: 40px;
+    line-height: 40px;
+    color: #202020;
+}
+
+
+li:nth-child(2n){
+    background-color: greenyellow;/*vvnice*/
+    /* background-color: gold;
+    background-color: palegreen; */
+    background-color: gold;
+}
+
+
+li:hover span{
+    width: 40px;
+    display: inline-block;
+}
+
+
+li:hover #todospacing{
+    display: none;
+}
+
+
+span{
+    background-color: #e74c3c;
+    /* background-color: red; */
+    margin-right: 20px;
+    text-align: center;
+    color: #1f2f2f;
+    height: 40px;  
+    /* --------------------- */
+    width: 40px;
+    display: inline-block;
+    margin-right: 20px;
+
+    width: 0;
+    display: none;
+    transition: 1.0s linear;
+}
+
+
+#addtodo{
+    width: 100%;
+    padding: 12px 13px 12px 20px;
+    border: none;
+    border-bottom: 1px solid grey;    
+    box-sizing: border-box;/*above one doesnt take car eof margin but only padding and border*/
+    background-color: orange;
+    color: ghostwhite;
+    text-shadow: 0px 0px 1px gray;
+    font-family: 'Roboto Condensed', 'Signika', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    outline: none;
+    letter-spacing: 1px;
+}
+
+
+#addtodo:placeholder-shown{
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-family: 'Roboto Condensed', 'Signika', sans-serif;
+    font-size: 22px;
+}
+
+
+#addtodo:focus{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: none;;
+    box-shadow: 0px 1px 1px grey, 0 2px 2px grey, 0 3px 3px grey;
+    box-shadow: 1px 1px 1px grey, 2px 2px 2px grey, 3px 3px 3px grey;
+}
+
+
+#container{
+    width: 360px;
+    margin: 100px auto;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+    padding: 0;
+}
+
+
+#todospacing{
+    display: inline-block;
+}
+
+
+#addSign{
+    font-size: 30px;
+    margin-top: 10px;
+    margin-right: 3px;
+    /* margin: auto 0; */
+    /* margin-bottom: 15px; */
+    padding-right: none;
+    /* padding-left: 40px; */
+    /* text-align: end; */
+    /* color: silver; */
+    height: auto;
+    float: right;
+    text-shadow: 3px 2px 2px gray;
+    /* text-shadow: inherit; */
+}
+
+
+.canceltodo{
+    color: grey;
+    text-decoration: line-through;
+    transition: 1000ms;
+    /* background-color: goldenrod; */
+}
+
+
+/* when addtodo is hidden */
+.addsigncolortogglehide{
+    color: white;
+}
+
+
+/* when addtodo is shown */
+.addsigncolortoggleshow{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
+.navbar-brand{
+    font-family: Lucida Console;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 3px 10px;
+    /* padding-left: 5px; */
+}
+
